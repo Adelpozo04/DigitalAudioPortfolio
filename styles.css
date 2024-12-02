@@ -1,0 +1,352 @@
+/* ------------ ESTILOS DE ETIQUETAS HTML ------------ */
+header {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+body {
+	background-image: url('web/fondo_MenuInicio.png'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Press Start 2P', sans-serif;
+	background-color: #7a65db;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+p {
+	color: white;
+	font-size: 20px;
+}
+
+li {
+	color: white;
+	font-size: 20px;
+}
+
+footer {
+	width: 100%;
+	background-color: #2750c0a7;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+	padding: 20px;
+	margin-top: 300px;
+
+}
+
+footer img {
+	width: 80px;
+	border-radius: 1em;
+}
+
+footer img:hover {
+	filter: brightness(75%);
+	-webkit-filter: brightness(75%);
+}
+
+/* ------------ ESTILOS PROPIOS ------------ */
+.cuadro {
+	display: block;
+	position: relative;
+	background-color: #515a8f;
+	color: #fff;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 30px;
+	background-image: url('cuadro.png');
+}
+
+.descripcion {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.descripcion-txt {
+	font-size: 25px;
+	text-align: justify;
+	margin-left: 100px;
+	margin-right: 100px;
+	line-height: 1.5;
+	padding: 10px;
+}
+
+.descarga {
+	display: block;
+	position: relative;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+}
+
+.descarga-boton {
+	background-color: rgb(47, 255, 255); 
+	border-color: rgb(19, 0, 128);
+	width: 75%;
+	height: 75px;
+	font-size: 25px;
+	font-family: Press Start 2P;
+	border-radius: 30px;
+}
+
+.boton-descarga {
+	display: inline-block;
+	padding: 1.5rem 2.375rem 1.5rem 2.375rem;
+	border: 0.125rem solid rgb(144, 233, 11);
+	border-radius: 2rem;
+	background-color: rgb(11, 233, 233);
+	color: #fff;
+	font: 600px "Press Start 2P", Press Start 2P;
+	text-decoration: none;
+	transition: all 0.2s;
+	font-size: 30px;
+}
+
+.boton-descarga:hover {
+	border: 0.125rem solid rgb(11, 126, 233);
+	background-color: rgba(11, 126, 233, 0.5);
+	color: rgb(11, 189, 233);
+}
+
+.row {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.capturas {
+	width: auto;
+	height: auto;
+	position: relative;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 30px auto 0;
+}
+
+.capturas img {
+	border: 10px solid #301874;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imgen {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	margin-left: 400px;
+	margin-right: 400px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: #1b0938;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: #894e18;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #1da5ce;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #1222b1;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+.lista-miembros {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 500px;
+	list-style: none;
+	
+	
+}
+
+.miembro {
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+	margin-bottom: -400px;
+	
+}
+
+.miembro img {
+	border-radius: 50%;
+	object-fit: cover;
+	margin-left: -100px;
+}
+
+
+.miembro-contenedor {
+	position: relative;
+	
+}
+
+.miembro-contenedor img {
+	display: block;
+}
+
+.miembro-contenedor .burbuja {
+	position: relative;
+	transform: translate(-23%, -78%);
+}
+
+.info-miembro {
+	position: relative;
+	text-align: justify;
+	margin-left: -50px;
+	margin-right: 00px;
+	padding: 10px;
+	font-size: 25px;
+}
+
+.textito {
+	font-size: 24px;
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+.textito2 {
+	font-size: 20px;
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+.video {
+	display: block;
+	margin: 30px auto;
+}
+
+.footer {
+	line-height: 40%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+	
+
+.footer-content {
+	margin: 30px 30px 30px;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #13cccc;
+	background-image: url('barra-lateral.png');
+	background-repeat: repeat repeat;
+}
+
+.imagen-container {
+	position: relative;
+	display: inline-block; 
+	width: 400px; 
+	height: 200px;
+	position: relative; /* Para hacer que el contenedor de imagen sea relativo */
+}
+
+.cambiar-imagen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity 0.5s ease-in-out;
+	width: 100%; 
+	height: 100%;
+}
+
+.primera-imagen {
+	opacity: 1;
+}
+
+.segunda-imagen {
+	opacity: 0;
+}
+
+.imagen-container:hover .primera-imagen {
+	opacity: 0;
+}
+
+.imagen-container:hover .segunda-imagen {
+	opacity: 1;
+}
